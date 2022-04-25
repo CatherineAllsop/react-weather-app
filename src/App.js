@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import Search from "./Search";
 import './App.css';
+import cloudy from "./cloudy.png";
+import bootstrap from "bootstrap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className="App">
+  <div className="weatherAppWrapper">  
+    <img
+      className="headerImage"
+      src= {cloudy}
+      alt="today's weather in your location"
+    />
+    <br />
+    <h1>London</h1>
+    <Search />
+    <div className="openSource"> 
+  <a href="https://github.com/CatherineAllsop/react-weather-app.git" target="_blank" rel="noreferrer">Open-source code</a> by Catherine Allsop
+</div>
+  </div>
+  </div>
   );
 }
 
